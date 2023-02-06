@@ -15,7 +15,7 @@ class MiscPage extends StatelessWidget {
           padding: EdgeInsets.all(8.0),
           child: Center(
             child: Text("""
-            Miscellaneous
+Miscellaneous
 Tracks & Outtakes
 Songs: 
 A Couple More Years

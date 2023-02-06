@@ -178,14 +178,14 @@ class _SearchPageState extends State<SearchPage> {
     "With God On Our Side (1964)",
     "You Ain't Going Nowhere (1967)",
   ];
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
   String _filter = "";
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Search"),
+        title: const Text("Search"),
       ),
       body: Column(
         children: <Widget>[
@@ -193,7 +193,7 @@ class _SearchPageState extends State<SearchPage> {
             padding: const EdgeInsets.all(8.0),
             child: TextField(
               controller: _controller,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 hintText: "Search entries",
               ),
               onChanged: (value) {
@@ -207,7 +207,7 @@ class _SearchPageState extends State<SearchPage> {
             child: ListView.builder(
               itemCount: _entries.length,
               itemBuilder: (context, index) {
-                if (_filter == null || _filter.isEmpty) {
+                if (_filter.isEmpty) {
                   return ListTile(
                     title: Text(_entries[index]),
                   );

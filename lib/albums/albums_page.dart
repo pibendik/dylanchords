@@ -17,7 +17,7 @@ class AlbumsPage extends StatelessWidget {
         child: GridView.count(
           padding: const EdgeInsets.fromLTRB(0,40,0,0),
           crossAxisCount: 2,
-          children: <Widget>[
+          children: const <Widget>[
             AlbumCard(
               albumTitle: "Blonde on Blonde",
               albumImage: "images/blonde.jpg",

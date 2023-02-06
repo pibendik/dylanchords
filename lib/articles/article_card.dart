@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
 
 class ArticleList extends StatelessWidget {
+  const ArticleList({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: [
         Container(
-          child: Container(
-            margin: EdgeInsets.only(top: 0, bottom: 20.0),
-
-            height: 80,
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/logo.png"),
-                fit: BoxFit.fill,
-              ),
+          margin: const EdgeInsets.only(top: 0, bottom: 20.0),
+          height: 80,
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/logo.png"),
+              fit: BoxFit.fill,
             ),
           ),
         ),
@@ -110,7 +109,7 @@ class ArticleCard extends StatelessWidget {
   final String summary;
   final Function onTap;
 
-  ArticleCard({
+  const ArticleCard({super.key,
     required this.title,
     required this.author,
     required this.date,
@@ -129,20 +128,20 @@ class ArticleCard extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 8.0),
+              const SizedBox(height: 8.0),
               Row(
                 children: [
                   Text(author),
-                  SizedBox(width: 8.0),
+                  const SizedBox(width: 8.0),
                   Text(date),
                 ],
               ),
-              SizedBox(height: 8.0),
+              const SizedBox(height: 8.0),
               Text(
                 summary,
                 maxLines: 3,

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../albums/albums_page.dart';
@@ -30,29 +29,29 @@ class GreenDrawer extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             const DrawerHeader(
-              child: Text("Dylanchords is a bit weird"),
               decoration: BoxDecoration(
                 color: Colors.blueGrey,
               ),
+              child: Text("Dylanchords is a bit weird"),
             ),
             ListTile(
-              title: Text("Home",),
+              title: const Text("Home",),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MyHomePage(title: "Articles"),
+                    builder: (context) => const MyHomePage(title: "Articles"),
                   ),
                 );
                 // Perform action for Home
               },
             ),
             ExpansionTile(
-              title: Text("Songs"),
+              title: const Text("Songs"),
               children: <Widget>[
                 ListTile(
-                  title: Text("Search"),
+                  title: const Text("Search"),
                   onTap: () {
                     Navigator.pop(context);
                     Navigator.push(
@@ -65,20 +64,20 @@ class GreenDrawer extends StatelessWidget {
                   },
                 ),
                 ListTile(
-                  title: Text("Albums"),
+                  title: const Text("Albums"),
                   onTap: () {
                     Navigator.pop(context);
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => AlbumsPage(),
+                        builder: (context) => const AlbumsPage(),
                       ),
                     );
                     // Perform action for Albums
                   },
                 ),
                 ListTile(
-                  title: Text("Misc."),
+                  title: const Text("Misc."),
                   onTap: () {
                     Navigator.pop(context);
                     Navigator.push(
@@ -93,7 +92,7 @@ class GreenDrawer extends StatelessWidget {
               ],
             ),
             ListTile(
-              title: Text("Professors"),
+              title: const Text("Professors"),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(
@@ -106,10 +105,10 @@ class GreenDrawer extends StatelessWidget {
               },
             ),
             ExpansionTile(
-              title: Text("Help"),
+              title: const Text("Help"),
               children: <Widget>[
                 ListTile(
-                  title: Text("General Principles"),
+                  title: const Text("General Principles"),
                   onTap: () {
                     Navigator.pop(context);
                     Navigator.push(
@@ -122,20 +121,20 @@ class GreenDrawer extends StatelessWidget {
                   },
                 ),
                 ListTile(
-                  title: Text("Chords - theory"),
+                  title: const Text("Chords - theory"),
                   onTap: () {
                     Navigator.pop(context);
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ChordsTheoryPage(),
+                        builder: (context) => const ChordsTheoryPage(),
                       ),
                     );
                     // Perform action for Chords - theory
                   },
                 ),
                 ListTile(
-                  title: Text("Chords and Tabs - praxis"),
+                  title: const Text("Chords and Tabs - praxis"),
                   onTap: () {
                     Navigator.pop(context);
                     Navigator.push(
@@ -148,7 +147,7 @@ class GreenDrawer extends StatelessWidget {
                   },
                 ),
                 ListTile(
-                  title: Text("Finger picking"),
+                  title: const Text("Finger picking"),
                   onTap: () {
                     Navigator.pop(context);
                     Navigator.push(
@@ -161,7 +160,7 @@ class GreenDrawer extends StatelessWidget {
                   },
                 ),
                 ListTile(
-                  title: Text("Fingering"),
+                  title: const Text("Fingering"),
                   onTap: () {
                     Navigator.pop(context);
                     Navigator.push(
@@ -174,7 +173,7 @@ class GreenDrawer extends StatelessWidget {
                   },
                 ),
                 ListTile(
-                  title: Text("Tunings"),
+                  title: const Text("Tunings"),
                   onTap: () {
                     Navigator.pop(context);
                     Navigator.push(
@@ -187,7 +186,7 @@ class GreenDrawer extends StatelessWidget {
                   },
                 ),
                 ListTile(
-                  title: Text("Harp"),
+                  title: const Text("Harp"),
                   onTap: () {
                     Navigator.pop(context);
                     Navigator.push(
@@ -202,20 +201,20 @@ class GreenDrawer extends StatelessWidget {
               ],
             ),
             ListTile(
-              title: Text("Forum"),
+              title: const Text("Forum"),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ForumPage(),
+                    builder: (context) => const ForumPage(),
                   ),
                 );
                 // Perform action for Forum
               },
             ),
             ListTile(
-              title: Text("Requests"),
+              title: const Text("Requests"),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(
@@ -228,7 +227,7 @@ class GreenDrawer extends StatelessWidget {
               },
             ),
             ListTile(
-              title: Text("Contact"),
+              title: const Text("Contact"),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(

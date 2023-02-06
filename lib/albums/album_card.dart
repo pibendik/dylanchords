@@ -10,7 +10,7 @@ class AlbumCard extends StatelessWidget {
   final List<String> songs;
   final List<String> outtakes;
 
-  AlbumCard({
+  const AlbumCard({
     required this.albumTitle,
     required this.albumImage,
     required this.releaseDate,
@@ -49,9 +49,9 @@ class AlbumCard extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 6),
+            const SizedBox(height: 6),
             Text(albumTitle),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Text(releaseDate),
           ],
         ),
@@ -69,7 +69,7 @@ class AlbumDetailsPage extends StatelessWidget {
   final List<String> outtakes;
   final String albumImage;
 
-  AlbumDetailsPage({
+  const AlbumDetailsPage({
     required this.albumTitle,
     required this.albumCoverImage,
     required this.recordingDate,
@@ -90,7 +90,7 @@ class AlbumDetailsPage extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.only(top: 20.0, bottom: 20.0),
+                margin: const EdgeInsets.only(top: 20.0, bottom: 20.0),
                 child: Container(
                   height: 250,
                   width: 250,
@@ -103,36 +103,36 @@ class AlbumDetailsPage extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(bottom: 10.0),
+                margin: const EdgeInsets.only(bottom: 10.0),
                 child: Text(
                   albumTitle,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(bottom: 10.0),
+                margin: const EdgeInsets.only(bottom: 10.0),
                 child: Text(
                   "Recording Date: $recordingDate",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 16.0,
                   ),
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(bottom: 10.0),
+                margin: const EdgeInsets.only(bottom: 10.0),
                 child: Text(
                   "Release Date: $releaseDate",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 16.0,
                   ),
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 20.0, bottom: 10.0),
-                child: Text(
+                margin: const EdgeInsets.only(top: 20.0, bottom: 10.0),
+                child: const Text(
                   "Songs",
                   style: TextStyle(
                     fontSize: 18.0,
@@ -146,13 +146,13 @@ class AlbumDetailsPage extends StatelessWidget {
                           MaterialPageRoute(builder: (context) => SongPage()));
                     },
                     child: Container(
-                      margin: EdgeInsets.only(bottom: 10.0),
+                      margin: const EdgeInsets.only(bottom: 10.0),
                       child: Text(song),
                     ),
                   )),
               Container(
-                margin: EdgeInsets.only(top: 20.0, bottom: 10.0),
-                child: Text(
+                margin: const EdgeInsets.only(top: 20.0, bottom: 10.0),
+                child: const Text(
                   "Outtakes",
                   style: TextStyle(
                     fontSize: 18.0,
@@ -161,7 +161,7 @@ class AlbumDetailsPage extends StatelessWidget {
                 ),
               ),
               ...outtakes.map((outtake) => Container(
-                    margin: EdgeInsets.only(bottom: 10.0),
+                    margin: const EdgeInsets.only(bottom: 10.0),
                     child: Text(outtake),
                   )),
             ],

@@ -117,7 +117,7 @@ p     pull-off    2p0
 h     hammer-on   0h2 (or h2 if obvious or too fast 
                             to be significant)
 /     slide up 
-\     slide down
+     slide down
 b     bend        3b5 = finger the string at the third 
                             fret, and bend it up until it 
                             sounds as if it was fingered  

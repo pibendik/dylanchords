@@ -6,34 +6,34 @@ class SongPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         child: SingleChildScrollView(
           child: Column(
             children: [
               Container(
-                padding: EdgeInsets.all(20),
+                padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
                   border: Border.all(width: 1, color: Colors.grey),
                 ),
                 child: Center(
                   child: Column(
                     children: [
-                      Text("Written by:",
+                      const Text("Written by:",
                           style: TextStyle(fontWeight: FontWeight.bold)),
-                      Text("Bob Dylan"),
-                      SizedBox(height: 10),
-                      Text("Released on:",
+                      const Text("Bob Dylan"),
+                      const SizedBox(height: 10),
+                      const Text("Released on:",
                           style: TextStyle(fontWeight: FontWeight.bold)),
-                      Text("""The Freewheelin' Bob Dylan (1963), Real Live (1984), Biograph (1985), The Bootleg Series, Vol. 7: No Direction Home (2005), The Bootleg Series, Vol. 9: The Witmark Demos: 1962-1964 (2010) and Live 1962-1966 — Rare Performances From The Copyright Collections (2018)""",
+                      const Text("""The Freewheelin' Bob Dylan (1963), Real Live (1984), Biograph (1985), The Bootleg Series, Vol. 7: No Direction Home (2005), The Bootleg Series, Vol. 9: The Witmark Demos: 1962-1964 (2010) and Live 1962-1966 — Rare Performances From The Copyright Collections (2018)""",
                       textAlign: TextAlign.center,
                       ),
-                      SizedBox(height: 10),
-                      Text("Tabbed by:",
+                      const SizedBox(height: 10),
+                      const Text("Tabbed by:",
                           style: TextStyle(fontWeight: FontWeight.bold)),
-                      Text("Eyolf Østrem"),
-                      SizedBox(height: 10),
+                      const Text("Eyolf Østrem"),
+                      const SizedBox(height: 10),
                       Container(
-                        padding: EdgeInsets.all(10),
+                        padding: const EdgeInsets.all(10),
                         color: Colors.grey[300],
                         child: Text(
                           """
@@ -51,7 +51,7 @@ G/b     020030
                   ),
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Text("""

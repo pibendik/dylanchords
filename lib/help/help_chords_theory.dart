@@ -43,7 +43,7 @@ Text("""
     )
   ),
 ),
-Text("""
+const Text("""
 
 The most weighty tones in the scale are the prime (or unison), the fifth, and the third (in C major: c, g and e). Then follow the remaining tones in the main scale (d, f, a, and b), and lastly the tones that are extraneous to the scale: the semi-tones (f sharp, e flat, etc.)
 
@@ -101,7 +101,7 @@ E ||-F--|-F#-|-G--|-G#-|-A-|- """,
     )
   ),
 ),
-Text("""
+const Text("""
 
 To find a chord like Am/f# (the most important chord in  Trying to Get to Heaven), start with the basic chord (Am) and search out the bass tone (f#) on one of the darkest strings, where it can be played. In this case there are two possibilities: on the 4th string: 
 """),
@@ -118,7 +118,7 @@ E ||-F--|-F#-|-G--|-G#-|-A-| """,
         )
   ),
 ),
-Text("""
+const Text("""
 
 or on the 6th:
 """),
@@ -135,7 +135,7 @@ E ||-F--|-F#-|-G--|-G#-|-A-|
              )
          ),
      ),
-Text("""
+const Text("""
 The second fingering is probably the best one, since it produces a fuller chord, and since you can use all the strings — unless you precisely want the higher sound, in which case the first fingering is better. In that case xx4555 is a third alternative. It even has the advantage of having the key note (A) on the highest string, thus emphasising it.
 
 In the same way we can find the fingering for the chord Bm7-5. First find the tones: Bm = b, d, f#. Add the 7th (a) and lower the 5th (f# -> f), and we have the tones b, d, f and a.
@@ -154,7 +154,7 @@ E ||-F--|-F#-|-G--|-G#-|-A-|-
     )
     ),
     ),
-Text("""
+const Text("""
 We probably want the key note (b) in the bass, which in practice leaves us with the alternatives x2323x, xx(3)435 or x2x231. (Note: Am/f# and Bm7-5 are actually chords of the same type. Am/f# is the same chord as F#m7-5. Try it!)
 
 For a more  comprehensive guide to guitar chords, see the ONLINE GUITAR CHORD DICTIONARY, or the other resources at  Guitar Notes.

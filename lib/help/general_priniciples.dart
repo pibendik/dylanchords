@@ -7,11 +7,11 @@ class GeneralPrinciplesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("General Principles"),
+        title: const Text("General Principles"),
       ),
-      drawer: GreenDrawer(),
-      body: Padding(
-        padding: const EdgeInsets.all(28.0),
+      drawer: const GreenDrawer(),
+      body: const Padding(
+        padding: EdgeInsets.all(28.0),
         child: Center(
           child: Text("""
 Just a few words about the principles that (mostly) have been followed in making the tabs on this site.
