@@ -1,6 +1,7 @@
 import 'package:dylanchords/articles/article_card.dart';
 import 'package:flutter/material.dart';
 
+import '../utilities/bar_dylan.dart';
 import '../utilities/green_drawer.dart';
 
 class NewsArticlesList extends StatelessWidget {
@@ -9,9 +10,7 @@ class NewsArticlesList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("News"),
-      ),
+      appBar: BarDylan(),
       drawer: const GreenDrawer(),
       body: Center(
         child: ListView(

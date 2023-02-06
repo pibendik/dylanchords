@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../songs/song.dart';
+import '../utilities/bar_dylan.dart';
 
 class AlbumCard extends StatelessWidget {
   final String albumTitle;
@@ -80,9 +81,7 @@ class AlbumDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(albumTitle),
-      ),
+      appBar: BarDylan(),
       body: Center(
         child: SingleChildScrollView(
           child: Column(

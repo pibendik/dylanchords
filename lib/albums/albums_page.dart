@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../utilities/bar_dylan.dart';
 import '../utilities/green_drawer.dart';
 import 'album_card.dart';
 
@@ -9,9 +10,7 @@ class AlbumsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Albums"),
-      ),
+      appBar: BarDylan(),
       drawer: const GreenDrawer(),
       body: Center(
         child: GridView.count(

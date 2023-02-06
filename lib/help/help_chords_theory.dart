@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../utilities/bar_dylan.dart';
 import '../utilities/green_drawer.dart';
 
 class ChordsTheoryPage extends StatelessWidget {
@@ -10,9 +11,7 @@ class ChordsTheoryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Chords - theory"),
-      ),
+      appBar: BarDylan(),
       drawer: const GreenDrawer(),
       body: Padding(
         padding: const EdgeInsets.all(1.0),

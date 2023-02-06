@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../utilities/bar_dylan.dart';
+
 class SearchPage extends StatefulWidget {
   const SearchPage({super.key});
 
@@ -186,9 +188,7 @@ class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Search"),
-      ),
+      appBar: BarDylan(),
       body: Column(
         children: <Widget>[
           Padding(

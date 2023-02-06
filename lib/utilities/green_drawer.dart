@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../albums/albums_page.dart';
 import '../articles/news.dart';
@@ -29,14 +30,29 @@ class GreenDrawer extends StatelessWidget {
       child: Drawer(
         child: ListView(
           children: <Widget>[
-            const DrawerHeader(
+            DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blueGrey,
+                color: Colors.transparent,
               ),
-              child: Text("Dylanchords is a bit weird"),
+                child: Text(
+                  """|---2--/4---              
+|-----------            
+|-1----/3---      
+|-----0-----              
+|----------- 
+|-0-------0-""",
+                  style: GoogleFonts.robotoMono(
+                      textStyle: const TextStyle(
+                    fontSize: 15,
+                  )),
+                  textAlign: TextAlign.right,
+                ),
+
             ),
             ListTile(
-              title: const Text("Articles",),
+              title: const Text(
+                "Articles",
+              ),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(

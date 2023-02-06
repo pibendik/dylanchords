@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../utilities/bar_dylan.dart';
 import '../utilities/green_drawer.dart';
 
 class ChordsAndTabsPraxisPage extends StatelessWidget {
@@ -9,9 +10,7 @@ class ChordsAndTabsPraxisPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Chords and Tabs - praxis"),
-      ),
+      appBar: BarDylan(),
       drawer: const GreenDrawer(),
       body: Padding(
         padding: const EdgeInsets.all(18),

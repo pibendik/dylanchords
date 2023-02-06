@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../utilities/bar_dylan.dart';
 import '../utilities/green_drawer.dart';
 
 class GeneralPrinciplesPage extends StatelessWidget {
@@ -8,9 +9,7 @@ class GeneralPrinciplesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("General Principles"),
-      ),
+      appBar: BarDylan(),
       drawer: const GreenDrawer(),
       body: const Padding(
         padding: EdgeInsets.all(28.0),

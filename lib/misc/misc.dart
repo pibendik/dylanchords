@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../utilities/bar_dylan.dart';
 import '../utilities/green_drawer.dart';
 
 class MiscPage extends StatelessWidget {
@@ -8,9 +9,7 @@ class MiscPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Misc."),
-      ),
+      appBar: BarDylan(),
       drawer: const GreenDrawer(),
       body: const SingleChildScrollView(
         child: Padding(

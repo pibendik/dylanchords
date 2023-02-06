@@ -7,16 +7,6 @@ class ArticleList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        Container(
-          margin: const EdgeInsets.only(top: 0, bottom: 20.0),
-          height: 80,
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/images/logo.png"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
         ArticleCard(
           title: 'Bob Dylan Wins Nobel Prize in Literature',
           author: 'John Doe',

@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 
+import '../utilities/bar_dylan.dart';
 import '../utilities/green_drawer.dart';
 
 class ForumPage extends StatelessWidget {
@@ -9,9 +10,7 @@ class ForumPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Forum"),
-      ),
+      appBar: BarDylan(),
       drawer: const GreenDrawer(),
       body: const Center(
         child: Text("""
