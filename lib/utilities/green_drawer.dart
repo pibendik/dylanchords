@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../albums/albums_page.dart';
+import '../articles/news.dart';
 import '../forum/forum.dart';
 import '../help/general_priniciples.dart';
 import '../help/help_chords_and_tabs.dart';
@@ -35,13 +36,13 @@ class GreenDrawer extends StatelessWidget {
               child: Text("Dylanchords is a bit weird"),
             ),
             ListTile(
-              title: const Text("Home",),
+              title: const Text("Articles",),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const MyHomePage(title: "Articles"),
+                    builder: (context) => const Articles(title: "Articles"),
                   ),
                 );
                 // Perform action for Home
@@ -98,7 +99,7 @@ class GreenDrawer extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ProfessorsPage(),
+                    builder: (context) => NewsArticlesList(),
                   ),
                 );
                 // Perform action for Professors

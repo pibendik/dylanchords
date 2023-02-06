@@ -13,9 +13,9 @@ class ChordsAndTabsPraxisPage extends StatelessWidget {
         title: const Text("Chords and Tabs - praxis"),
       ),
       drawer: const GreenDrawer(),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(0,18.0,0,0),
+      body: Padding(
+        padding: const EdgeInsets.all(18),
+        child: SingleChildScrollView (
           child: Center(
             child: Text(
               """Four ways to write a chord
