@@ -6,10 +6,10 @@ class SongsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Songs"),
+        title: const Text("Songs"),
       ),
-      drawer: GreenDrawer(),
-      body: Center(
+      drawer: const GreenDrawer(),
+      body: const Center(
         child: Text("Songs"),
       ),
     );
@@ -21,10 +21,10 @@ class ProfessorsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Professors"),
+        title: const Text("Professors"),
       ),
-      drawer: GreenDrawer(),
-      body: Center(
+      drawer: const GreenDrawer(),
+      body: const Center(
         child: Text("Professors"),
       ),
     );
@@ -36,10 +36,10 @@ class HelpPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Help"),
+        title: const Text("Help"),
       ),
-      drawer: GreenDrawer(),
-      body: Center(
+      drawer: const GreenDrawer(),
+      body: const Center(
         child: Text("Help"),
       ),
     );
@@ -55,10 +55,10 @@ class FingerpickingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Fingerpicking"),
+        title: const Text("Fingerpicking"),
       ),
-      drawer: GreenDrawer(),
-      body: Center(
+      drawer: const GreenDrawer(),
+      body: const Center(
         child: Text("Fingerpicking"),
       ),
     );
@@ -70,10 +70,10 @@ class FingeringPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Fingering"),
+        title: const Text("Fingering"),
       ),
-      drawer: GreenDrawer(),
-      body: Center(
+      drawer: const GreenDrawer(),
+      body: const Center(
         child: Text("Fingering"),
       ),
     );
@@ -85,10 +85,10 @@ class TuningsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Tunings"),
+        title: const Text("Tunings"),
       ),
-      drawer: GreenDrawer(),
-      body: Center(
+      drawer: const GreenDrawer(),
+      body: const Center(
         child: Text("Tunings"),
       ),
     );
@@ -100,10 +100,10 @@ class HarpPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Harp"),
+        title: const Text("Harp"),
       ),
-      drawer: GreenDrawer(),
-      body: Center(
+      drawer: const GreenDrawer(),
+      body: const Center(
         child: Text("Harp"),
       ),
     );
@@ -116,10 +116,10 @@ class RequestsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Requests"),
+        title: const Text("Requests"),
       ),
-      drawer: GreenDrawer(),
-      body: Center(
+      drawer: const GreenDrawer(),
+      body: const Center(
         child: Text("Requests"),
       ),
     );
@@ -131,11 +131,11 @@ class ContactPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Contact"),
+        title: const Text("Contact"),
       ),
-      drawer: GreenDrawer(),
-      body: Center(
-        child: Text("Contact"),
+      drawer: const GreenDrawer(),
+      body: const Center(
+        child: Text("For corrections, suggestions, questions, requests, etc., mail me at eyolf@dylanchords.com"),
       ),
     );
   }

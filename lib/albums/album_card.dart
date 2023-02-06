@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../songs/song.dart';
+
 class AlbumCard extends StatelessWidget {
   final String albumTitle;
   final String albumImage;
@@ -138,9 +140,15 @@ class AlbumDetailsPage extends StatelessWidget {
                   ),
                 ),
               ),
-              ...songs.map((song) => Container(
-                    margin: EdgeInsets.only(bottom: 10.0),
-                    child: Text(song),
+              ...songs.map((song) => GestureDetector(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => SongPage()));
+                    },
+                    child: Container(
+                      margin: EdgeInsets.only(bottom: 10.0),
+                      child: Text(song),
+                    ),
                   )),
               Container(
                 margin: EdgeInsets.only(top: 20.0, bottom: 10.0),
