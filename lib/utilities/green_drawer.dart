@@ -9,6 +9,7 @@ import '../help/help_chords_theory.dart';
 import '../main.dart';
 import '../misc/misc.dart';
 import '../pages.dart';
+import '../songs/search.dart';
 
 class GreenDrawer extends StatelessWidget {
   const GreenDrawer({
@@ -51,13 +52,13 @@ class GreenDrawer extends StatelessWidget {
               title: Text("Songs"),
               children: <Widget>[
                 ListTile(
-                  title: Text("Songs"),
+                  title: Text("Search"),
                   onTap: () {
                     Navigator.pop(context);
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => SongsPage(),
+                        builder: (context) => SearchPage(),
                       ),
                     );
                     // Perform action for Albums
