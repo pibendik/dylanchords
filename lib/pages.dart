@@ -46,21 +46,6 @@ class HelpPage extends StatelessWidget {
   }
 }
 
-class ChordsTheoryPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Chords - theory"),
-      ),
-      drawer: GreenDrawer(),
-      body: Center(
-        child: Text("Chords - theory"),
-      ),
-    );
-  }
-}
-
 class ChordsAndTabsPraxisPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

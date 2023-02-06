@@ -1,8 +1,6 @@
-import 'package:dylanchords/pages.dart';
 import 'package:dylanchords/utilities/green_drawer.dart';
 import 'package:flutter/material.dart';
 
-import 'albums/albums_page.dart';
 import 'articles/article_card.dart';
 
 void main() {

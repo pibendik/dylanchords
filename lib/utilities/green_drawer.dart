@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../albums/albums_page.dart';
 import '../help/general_priniciples.dart';
+import '../help/help_chords_theory.dart';
 import '../main.dart';
 import '../misc/misc.dart';
 import '../pages.dart';
