@@ -46,20 +46,7 @@ class HelpPage extends StatelessWidget {
   }
 }
 
-class ChordsAndTabsPraxisPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-        title: Text("Chords and Tabs - praxis"),
-        ),
-      drawer: GreenDrawer(),
-      body: Center(
-        child: Text("Chords and Tabs - praxis"),
-      ),
-    );
-  }
-}
+
 
 
 
@@ -123,20 +110,6 @@ class HarpPage extends StatelessWidget {
   }
 }
 
-class ForumPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Forum"),
-      ),
-      drawer: GreenDrawer(),
-      body: Center(
-        child: Text("Forum"),
-      ),
-    );
-  }
-}
 
 class RequestsPage extends StatelessWidget {
   @override
