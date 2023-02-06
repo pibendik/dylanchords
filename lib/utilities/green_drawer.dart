@@ -2,7 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../albums/albums_page.dart';
+import '../help/general_priniciples.dart';
 import '../main.dart';
+import '../misc/misc.dart';
 import '../pages.dart';
 
 class GreenDrawer extends StatelessWidget {
