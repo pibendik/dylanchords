@@ -57,7 +57,7 @@ class GreenDrawer extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => SearchPage(),
+                        builder: (context) => const SearchPage(),
                       ),
                     );
                     // Perform action for Albums
@@ -83,7 +83,7 @@ class GreenDrawer extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => MiscPage(),
+                        builder: (context) => const MiscPage(),
                       ),
                     );
                     // Perform action for Misc.
@@ -114,7 +114,7 @@ class GreenDrawer extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => GeneralPrinciplesPage(),
+                        builder: (context) => const GeneralPrinciplesPage(),
                       ),
                     );
                     // Perform action for General Principles
@@ -140,7 +140,7 @@ class GreenDrawer extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ChordsAndTabsPraxisPage(),
+                        builder: (context) => const ChordsAndTabsPraxisPage(),
                       ),
                     );
                     // Perform action for Chords and Tabs - praxis

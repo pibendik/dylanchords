@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import '../utilities/green_drawer.dart';
 
 class ChordsAndTabsPraxisPage extends StatelessWidget {
+  const ChordsAndTabsPraxisPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

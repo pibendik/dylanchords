@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../utilities/green_drawer.dart';
 
 class GeneralPrinciplesPage extends StatelessWidget {
+  const GeneralPrinciplesPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

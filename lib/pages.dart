@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 
 
 class ProfessorsPage extends StatelessWidget {
+  const ProfessorsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,6 +21,8 @@ class ProfessorsPage extends StatelessWidget {
 }
 
 class HelpPage extends StatelessWidget {
+  const HelpPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,6 +42,8 @@ class HelpPage extends StatelessWidget {
 
 
 class FingerpickingPage extends StatelessWidget {
+  const FingerpickingPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,6 +59,8 @@ class FingerpickingPage extends StatelessWidget {
 }
 
 class FingeringPage extends StatelessWidget {
+  const FingeringPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,6 +76,8 @@ class FingeringPage extends StatelessWidget {
 }
 
 class TuningsPage extends StatelessWidget {
+  const TuningsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -83,6 +93,8 @@ class TuningsPage extends StatelessWidget {
 }
 
 class HarpPage extends StatelessWidget {
+  const HarpPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -99,6 +111,8 @@ class HarpPage extends StatelessWidget {
 
 
 class RequestsPage extends StatelessWidget {
+  const RequestsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -114,6 +128,8 @@ class RequestsPage extends StatelessWidget {
 }
 
 class ContactPage extends StatelessWidget {
+  const ContactPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

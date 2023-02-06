@@ -10,7 +10,7 @@ class AlbumCard extends StatelessWidget {
   final List<String> songs;
   final List<String> outtakes;
 
-  const AlbumCard({
+  const AlbumCard({super.key,
     required this.albumTitle,
     required this.albumImage,
     required this.releaseDate,
@@ -36,25 +36,23 @@ class AlbumCard extends StatelessWidget {
                       albumCoverImage: '',
                     )));
       },
-      child: Container(
-        child: Column(
-          children: [
-            Container(
-              height: 120,
-              width: 120,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/$albumImage"),
-                  fit: BoxFit.fill,
-                ),
+      child: Column(
+        children: [
+          Container(
+            height: 120,
+            width: 120,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/$albumImage"),
+                fit: BoxFit.fill,
               ),
             ),
-            const SizedBox(height: 6),
-            Text(albumTitle),
-            const SizedBox(height: 8),
-            Text(releaseDate),
-          ],
-        ),
+          ),
+          const SizedBox(height: 6),
+          Text(albumTitle),
+          const SizedBox(height: 8),
+          Text(releaseDate),
+        ],
       ),
     );
   }
@@ -69,7 +67,7 @@ class AlbumDetailsPage extends StatelessWidget {
   final List<String> outtakes;
   final String albumImage;
 
-  const AlbumDetailsPage({
+  const AlbumDetailsPage({super.key,
     required this.albumTitle,
     required this.albumCoverImage,
     required this.recordingDate,
@@ -143,7 +141,7 @@ class AlbumDetailsPage extends StatelessWidget {
               ...songs.map((song) => GestureDetector(
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => SongPage()));
+                          MaterialPageRoute(builder: (context) => const SongPage()));
                     },
                     child: Container(
                       margin: const EdgeInsets.only(bottom: 10.0),
