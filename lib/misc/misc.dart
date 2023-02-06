@@ -1,5 +1,3 @@
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../utilities/green_drawer.dart';
@@ -9,12 +7,15 @@ class MiscPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Misc."),
+        title: const Text("Misc."),
       ),
-      drawer: GreenDrawer(),
-      body: Center(
-        child: Text("""
-        Miscellaneous
+      drawer: const GreenDrawer(),
+      body: const SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Center(
+            child: Text("""
+            Miscellaneous
 Tracks & Outtakes
 Songs: 
 A Couple More Years
@@ -540,7 +541,9 @@ A Change Is Gonna Come (28 March 2004, Apollo Theatre)
 
 No More One More Time (Oct 13, 2004)
 
-        """),
+            """),
+          ),
+        ),
       ),
     );
   }
