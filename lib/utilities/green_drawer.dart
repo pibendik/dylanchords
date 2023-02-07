@@ -34,8 +34,7 @@ class GreenDrawer extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.transparent,
               ),
-                child: Text(
-                  """|---2--/4---              
+                child: Text("""|---2--/4---              
 |-----------            
 |-1----/3---      
 |-----0-----              
@@ -44,7 +43,7 @@ class GreenDrawer extends StatelessWidget {
                   style: GoogleFonts.robotoMono(
                       textStyle: const TextStyle(
                     fontSize: 15,
-                  )),
+                      )),
                   textAlign: TextAlign.right,
                 ),
 
