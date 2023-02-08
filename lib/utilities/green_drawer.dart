@@ -5,6 +5,7 @@ import '../albums/albums_page.dart';
 import '../articles/news.dart';
 import '../forum/forum.dart';
 import '../help/general_priniciples.dart';
+import '../help/harp.dart';
 import '../help/help_chords_and_tabs.dart';
 import '../help/help_chords_theory.dart';
 import '../main.dart';
@@ -123,6 +124,19 @@ class GreenDrawer extends StatelessWidget {
             ExpansionTile(
               title: const Text("Help"),
               children: <Widget>[
+                ListTile(
+                  title: const Text("Help"),
+                  onTap: () {
+                    Navigator.pop(context);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GeneralPrinciplesPage(), //TODO: supposed to be helppage
+                      ),
+                    );
+                    // Perform action for General Principles
+                  },
+                ),
                 ListTile(
                   title: const Text("General Principles"),
                   onTap: () {
